@@ -1,0 +1,51 @@
+:root{
+  --ink:#17221d; --muted:#68736d; --cream:#f5f1e8; --paper:#fffdf8;
+  --accent:#b97835; --line:#ded9cf; --dark:#14231c;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);line-height:1.5}
+a{text-decoration:none;color:inherit}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between;padding:0 6vw;position:absolute;top:0;left:0;right:0;z-index:10;color:#fff}
+.brand{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:500;letter-spacing:2px}
+.brand b{font-weight:800}
+.brand-mark{width:34px;height:34px;border:1px solid rgba(255,255,255,.7);border-radius:50%;display:grid;place-items:center;font-family:Georgia,serif;font-size:18px}
+.nav nav{display:flex;gap:34px;font-size:13px}
+.nav nav a{opacity:.9}.nav nav a:hover{opacity:1}
+.nav-cta{padding:11px 18px;border:1px solid rgba(255,255,255,.7);border-radius:30px;font-size:12px}
+.hero{min-height:760px;position:relative;display:flex;align-items:center;padding:150px 6vw 130px;background:
+linear-gradient(100deg,rgba(12,26,20,.88),rgba(12,26,20,.38)),url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=2200&q=85") center/cover}
+.hero-content{position:relative;z-index:2;color:#fff;max-width:720px}
+.eyebrow{font-size:11px;letter-spacing:3px;font-weight:800;margin-bottom:16px;opacity:.9}
+.eyebrow.dark{color:var(--accent)}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:500;line-height:1.05}
+h1{font-size:clamp(50px,7vw,88px);letter-spacing:-3px}
+h1 em,h2 em{color:#d9a46b;font-style:italic}
+.hero-copy{max-width:590px;font-size:17px;color:rgba(255,255,255,.82);margin:25px 0 32px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.primary-btn,.ghost-btn{display:inline-flex;align-items:center;justify-content:center;gap:18px;padding:15px 22px;border-radius:3px;font-size:13px;font-weight:700;border:0;cursor:pointer}
+.primary-btn{background:#c58442;color:#fff}.primary-btn span{font-size:19px}
+.ghost-btn{border:1px solid rgba(255,255,255,.55);color:#fff}
+.search-card{position:absolute;z-index:4;bottom:-52px;left:6vw;right:6vw;background:#fff;padding:20px;display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr auto;gap:10px;box-shadow:0 18px 50px rgba(0,0,0,.14);border-radius:4px}
+.field{padding:7px 13px;border-right:1px solid var(--line)}label{display:block;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:#7b827e;font-weight:800;margin-bottom:6px}
+input,select,textarea{width:100%;border:1px solid var(--line);background:#fff;color:var(--ink);padding:13px 12px;border-radius:3px;font:inherit;outline:none}
+.search-card input,.search-card select{border:0;padding:3px 0}.search-btn{background:var(--dark);color:#fff;border:0;padding:0 25px;border-radius:3px;font-weight:700;cursor:pointer}
+.section{padding:130px 6vw 80px}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:38px}.section-heading h2{font-size:52px}.section-heading>p{max-width:350px;color:var(--muted);font-size:14px}
+.destination-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.destination-card{height:390px;border-radius:3px;overflow:hidden;position:relative;background-size:cover;background-position:center;display:flex;align-items:end;padding:24px;color:#fff}
+.destination-card:after,.stay-image:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 35%,rgba(0,0,0,.7))}
+.destination-card>div{position:relative;z-index:1}.destination-card span{font-size:11px;letter-spacing:2px;opacity:.75}.destination-card h3{font-size:34px;margin:7px 0}.destination-card p{font-size:12px;opacity:.85}
+.coorg{background-image:url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80")}
+.wayanad{background-image:url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80")}
+.goa{background-image:url("https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=900&q=80")}
+.kerala{background-image:url("https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=900&q=80")}
+.stays{background:var(--cream)}.stay-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.stay-card{background:#fff}.stay-image{height:270px;position:relative;background-size:cover;background-position:center}.stay1{background-image:url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1000&q=80")}.stay2{background-image:url("https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1000&q=80")}.stay3{background-image:url("https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1000&q=80")}.tag{position:absolute;z-index:2;top:15px;left:15px;background:#fff;padding:7px 10px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px}.stay-info{padding:20px}.rating{font-size:12px;color:#a9672b;font-weight:800}.rating small{color:#8a918c;font-weight:500;margin-left:5px}.stay-info h3{font-size:26px;margin:8px 0 4px}.stay-info>p{font-size:13px;color:var(--muted)}.stay-bottom{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);margin-top:18px;padding-top:16px}.stay-bottom strong{font-size:19px}.stay-bottom small{font-size:11px;color:var(--muted);font-weight:400}.stay-bottom button{border:0;background:none;color:#a9672b;font-weight:800;cursor:pointer}.text-link{font-size:13px;font-weight:800;color:#a9672b}
+.why{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}.why-copy h2{font-size:58px}.why-copy>p{max-width:510px;color:var(--muted);margin:24px 0 30px}.dark-btn{background:var(--dark)}.benefits{display:grid;grid-template-columns:1fr 1fr;gap:35px}.benefits div{border-top:1px solid var(--line);padding-top:18px}.benefits b{font-size:10px;color:#a9672b;letter-spacing:2px}.benefits h3{font-size:25px;margin:10px 0}.benefits p{font-size:13px;color:var(--muted)}
+.booking-section{padding:80px 6vw 120px;background:var(--dark)}.booking-card{max-width:1180px;margin:auto;background:#f4efe5;padding:60px;display:grid;grid-template-columns:1fr 1fr;gap:70px}.booking-card h2{font-size:56px}.booking-card>div>p:not(.eyebrow){color:var(--muted);max-width:430px;margin:20px 0}.contact-points{display:flex;flex-direction:column;gap:9px;font-size:13px;margin-top:30px}.booking-card form{display:flex;flex-direction:column;gap:10px}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.form-btn{margin-top:4px}.form-note{color:#777;font-size:10px}
+footer{background:#0e1914;color:#dfe4df;padding:60px 6vw 35px;display:grid;grid-template-columns:2fr 1fr 1fr;gap:50px;position:relative}footer .brand-mark{border-color:#6c756f}footer h4{font-size:11px;text-transform:uppercase;letter-spacing:2px;margin-bottom:15px}footer>div:not(.copyright) a{display:block;font-size:13px;color:#aeb8b1;margin:8px 0}.footer-brand p{font-family:Georgia,serif;font-style:italic;color:#8e9892;margin-top:12px}.copyright{grid-column:1/-1;border-top:1px solid #29342e;padding-top:22px;color:#707b74;font-size:11px}
+
+@media(max-width:900px){
+  .nav nav{display:none}.nav{padding:0 5vw}.hero{min-height:800px;padding:130px 5vw 210px}.search-card{left:5vw;right:5vw;grid-template-columns:1fr 1fr;bottom:-115px}.search-btn{height:48px}.destination-grid{grid-template-columns:1fr 1fr}.stay-grid{grid-template-columns:1fr}.why{grid-template-columns:1fr;gap:50px}.booking-card{grid-template-columns:1fr;padding:35px;gap:35px}
+}
+@media(max-width:560px){
+  h1{font-size:51px}.section{padding-left:5vw;padding-right:5vw}.section-heading{display:block}.section-heading h2{font-size:42px}.section-heading>p{margin-top:15px}.destination-grid{grid-template-columns:1fr}.destination-card{height:330px}.search-card{grid-template-columns:1fr;bottom:-230px}.field{border-right:0;border-bottom:1px solid var(--line);padding-bottom:9px}.search-btn{height:50px}.hero{padding-bottom:270px}.why-copy h2,.booking-card h2{font-size:45px}.benefits{grid-template-columns:1fr}.booking-section{padding-left:5vw;padding-right:5vw}.booking-card{padding:25px}footer{grid-template-columns:1fr 1fr;padding-left:5vw;padding-right:5vw}
+}

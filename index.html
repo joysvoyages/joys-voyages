@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Joy's Voyages - Discover stays, resorts and holiday experiences at great prices.">
+  <title>Joy's Voyages | Stay. Explore. Enjoy.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#">
+      <span class="brand-mark">J</span>
+      <span>JOY'S <b>VOYAGES</b></span>
+    </a>
+    <nav>
+      <a href="#stays">Stays</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#booking">Book a Stay</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">STAYS • GETAWAYS • EXPERIENCES</p>
+        <h1>Find a stay<br><em>worth travelling for.</em></h1>
+        <p class="hero-copy">Handpicked hotels, resorts and holiday stays across beautiful destinations — with personal assistance from booking to check-out.</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#stays">Explore Stays <span>→</span></a>
+          <a class="ghost-btn" href="#booking">Get Best Price</a>
+        </div>
+      </div>
+
+      <div class="search-card">
+        <div class="field">
+          <label>Destination</label>
+          <input id="destination" type="text" placeholder="Where are you going?">
+        </div>
+        <div class="field">
+          <label>Check-in</label>
+          <input id="checkin" type="date">
+        </div>
+        <div class="field">
+          <label>Check-out</label>
+          <input id="checkout" type="date">
+        </div>
+        <div class="field">
+          <label>Guests</label>
+          <select id="guests">
+            <option>2 Guests</option>
+            <option>1 Guest</option>
+            <option>3 Guests</option>
+            <option>4 Guests</option>
+            <option>5+ Guests</option>
+          </select>
+        </div>
+        <button class="search-btn" onclick="searchStay()">Search</button>
+      </div>
+    </section>
+
+    <section class="section" id="destinations">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow dark">EXPLORE INDIA</p>
+          <h2>Popular destinations</h2>
+        </div>
+        <p>Beautiful places, memorable stays and deals selected for you.</p>
+      </div>
+
+      <div class="destination-grid">
+        <article class="destination-card coorg">
+          <div><span>01</span><h3>Coorg</h3><p>Nature • Coffee • Hills</p></div>
+        </article>
+        <article class="destination-card wayanad">
+          <div><span>02</span><h3>Wayanad</h3><p>Green escapes • Resorts</p></div>
+        </article>
+        <article class="destination-card goa">
+          <div><span>03</span><h3>Goa</h3><p>Beaches • Leisure • Fun</p></div>
+        </article>
+        <article class="destination-card kerala">
+          <div><span>04</span><h3>Kerala</h3><p>Backwaters • Culture</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section stays" id="stays">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow dark">HANDPICKED FOR YOU</p>
+          <h2>Featured stays</h2>
+        </div>
+        <a class="text-link" href="#booking">Request more options →</a>
+      </div>
+
+      <div class="stay-grid">
+        <article class="stay-card">
+          <div class="stay-image stay1"><span class="tag">Popular</span></div>
+          <div class="stay-info">
+            <div class="rating">★ 4.8 <small>Excellent</small></div>
+            <h3>Misty Hills Retreat</h3>
+            <p>Madikeri, Coorg</p>
+            <div class="stay-bottom"><strong>₹2,499 <small>/ night</small></strong><button onclick="bookProperty('Misty Hills Retreat')">Book →</button></div>
+          </div>
+        </article>
+        <article class="stay-card">
+          <div class="stay-image stay2"><span class="tag">Best Value</span></div>
+          <div class="stay-info">
+            <div class="rating">★ 4.7 <small>Excellent</small></div>
+            <h3>Green Valley Resort</h3>
+            <p>Wayanad, Kerala</p>
+            <div class="stay-bottom"><strong>₹2,199 <small>/ night</small></strong><button onclick="bookProperty('Green Valley Resort')">Book →</button></div>
+          </div>
+        </article>
+        <article class="stay-card">
+          <div class="stay-image stay3"><span class="tag">Beach Stay</span></div>
+          <div class="stay-info">
+            <div class="rating">★ 4.6 <small>Excellent</small></div>
+            <h3>Coastal Breeze Resort</h3>
+            <p>North Goa, Goa</p>
+            <div class="stay-bottom"><strong>₹2,799 <small>/ night</small></strong><button onclick="bookProperty('Coastal Breeze Resort')">Book →</button></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="why section" id="why-us">
+      <div class="why-copy">
+        <p class="eyebrow dark">WHY JOY'S VOYAGES</p>
+        <h2>More than a booking.<br><em>It's your journey.</em></h2>
+        <p>We help you find the right stay, the right price and the right experience — without making travel planning complicated.</p>
+        <a class="primary-btn dark-btn" href="#booking">Plan My Stay <span>→</span></a>
+      </div>
+      <div class="benefits">
+        <div><b>01</b><h3>Handpicked stays</h3><p>Hotels and resorts selected for comfort, location and value.</p></div>
+        <div><b>02</b><h3>Great deals</h3><p>We compare options and help you get a competitive price.</p></div>
+        <div><b>03</b><h3>Personal assistance</h3><p>Real support before, during and after your booking.</p></div>
+        <div><b>04</b><h3>Trips made simple</h3><p>Stays, packages, transport and group travel — all in one place.</p></div>
+      </div>
+    </section>
+
+    <section class="booking-section" id="booking">
+      <div class="booking-card">
+        <div>
+          <p class="eyebrow">READY TO TRAVEL?</p>
+          <h2>Tell us where<br>you want to go.</h2>
+          <p>Send your requirements and our team will help you find the best available options.</p>
+          <div class="contact-points">
+            <span>✓ Best-price assistance</span>
+            <span>✓ Hotel & resort bookings</span>
+            <span>✓ Holiday packages</span>
+          </div>
+        </div>
+        <form id="bookingForm" onsubmit="submitBooking(event)">
+          <input id="name" required placeholder="Your name">
+          <input id="phone" required type="tel" placeholder="Phone / WhatsApp number">
+          <input id="place" required placeholder="Destination">
+          <div class="form-row">
+            <input id="date" type="date">
+            <input id="people" type="number" min="1" value="2" placeholder="Guests">
+          </div>
+          <textarea id="message" rows="3" placeholder="Tell us what you need..."></textarea>
+          <button class="primary-btn form-btn" type="submit">Send Enquiry <span>→</span></button>
+          <small class="form-note">This demo opens WhatsApp. Replace the number in script.js with your business number.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-brand">
+      <a class="brand" href="#"><span class="brand-mark">J</span><span>JOY'S <b>VOYAGES</b></span></a>
+      <p>Stay. Explore. Enjoy.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="#stays">Stays</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#why-us">Why Us</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="#booking">Book a Stay</a>
+      <a href="https://wa.me/" target="_blank">WhatsApp</a>
+      <a href="mailto:hello@joysvoyages.com">Email</a>
+    </div>
+    <div class="copyright">© 2026 Joy's Voyages. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
