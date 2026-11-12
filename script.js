@@ -1,6 +1,6 @@
 // IMPORTANT: Replace this with Joy's Voyages' WhatsApp number.
  // Use country code + number, digits only. Example for India: 919876543210
-const WHATSAPP_NUMBER = "919449721096";
+const WHATSAPP_NUMBER = "91XXXXXXXXXX";
 
 const menuToggle = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".nav");
